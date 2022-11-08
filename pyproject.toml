@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tap-klaviyo"
+version = "0.1.0"
+description = ""
+authors = ["Dylan Möller <dylanmoller@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "tap_klaviyo"}]
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.11"
+singer-sdk = "^0.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tap-klaviyo = 'tap_klaviyo.tap:TapKlaviyo.cli'

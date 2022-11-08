@@ -1,0 +1,137 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": ["string", "null"]
+        },
+        "id": {
+            "type": ["string", "null"]
+        },
+        "email": {
+            "type": ["string", "null"],
+            "format": "email"
+        },
+        "phone_number": {
+            "type": ["string", "null"]
+        },
+        "external_id": {
+            "type": ["string", "null"]
+        },
+        "anonymous_id": {
+            "type": ["string", "null"]
+        },
+        "first_name": {
+            "type": ["string", "null"]
+        },
+        "last_name": {
+            "type": ["string", "null"]
+        },
+        "organization": {
+            "type": ["string", "null"]
+        },
+        "title": {
+            "type": ["string", "null"]
+        },
+        "image": {
+            "type": ["string", "null"]
+        },
+        "created": {
+            "type": ["string", "null"],
+            "format": "date-time"
+        },
+        "updated": {
+            "type": ["string", "null"],
+            "format": "date-time"
+        },
+        "last_event_date": {
+            "type": ["string", "null"],
+            "format": "date-time"
+        },
+        "location": {
+            "type": ["string", "null"],
+            "properties": {
+                "address1": {
+                    "type": ["string", "null"]
+                },
+                "address2": {
+                    "type": ["string", "null"]
+                },
+                "city": {
+                    "type": ["string", "null"]
+                },
+                "country": {
+                    "type": ["string", "null"]
+                },
+                "latitude": {
+                    "type": ["number", "null"]
+                },
+                "longitude": {
+                    "type": ["number", "null"]
+                },
+                "region": {
+                    "type": ["string", "null"]
+                },
+                "zip": {
+                    "type": ["string", "null"]
+                },
+                "timezone": {
+                    "type": ["string", "null"]
+                }
+            }
+        },
+        "properties": {
+            "type": ["string", "null"]
+        },
+        "links": {
+            "type": ["object", "null"],
+            "properties": {
+                "self": {
+                    "type": ["string", "null"]
+                }
+            },
+            "additionalProperties": false
+        },
+        "relationships": {
+            "type": ["object", "null"],
+            "properties": {
+                "lists": {
+                    "type": ["object", "null"],
+                    "properties": {
+                        "links": {
+                            "type": ["object", "null"],
+                            "properties": {
+                                "self": {
+                                    "type": ["string", "null"],
+                                    "format": "uri"
+                                },
+                                "related": {
+                                    "type": ["string", "null"],
+                                    "format": "uri"
+                                }
+                            }
+                        }
+                    }
+                    
+                },
+                "segments": {
+                    "type": ["object", "null"],
+                    "properties": {
+                        "links": {
+                            "type": ["object", "null"],
+                            "properties": {
+                                "self": {
+                                    "type": ["string", "null"],
+                                    "format": "uri"
+                                },
+                                "related": {
+                                    "type": ["string", "null"],
+                                    "format": "uri"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

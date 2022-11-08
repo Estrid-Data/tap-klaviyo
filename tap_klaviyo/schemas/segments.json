@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": ["string", "null"]
+        },
+        "id": {
+            "type": ["string", "null"]
+        },
+        "name": {
+            "type": ["string", "null"]
+        },
+        "created": {
+            "type": ["string", "null"],
+            "format": "date-time"
+        },
+        "updated": {
+            "type": ["string", "null"],
+            "format": "date-time"
+        },
+        "links": {
+            "type": ["object", "null"],
+            "properties": {
+                "self": {
+                    "type": ["string", "null"]
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
